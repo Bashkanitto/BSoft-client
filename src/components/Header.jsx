@@ -8,7 +8,7 @@ const Header = () => {
 	};
 
 	return (
-		<header className='container flex justify-between mx-auto h-[95px] items-center mb-10'>
+		<header className='container flex justify-between mx-auto h-[95px] items-center'>
 			<img src='/images/logo.png' alt='logo' />
 			<nav className='hidden lg:flex gap-10 '>
 				<a href='#'>Главная</a>
