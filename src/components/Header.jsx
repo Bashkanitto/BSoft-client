@@ -8,7 +8,7 @@ const Header = () => {
 	};
 
 	return (
-		<header className='container flex justify-between mx-auto h-[95px] items-center'>
+		<header className='container flex justify-between mx-auto h-[95px] items-center mb-10'>
 			<img src='/images/logo.png' alt='logo' />
 			<nav className='hidden lg:flex gap-10 '>
 				<a href='#'>Главная</a>
@@ -21,8 +21,8 @@ const Header = () => {
 			</nav>
 			<nav
 				onClick={handleMenuOpen}
-				style={{ display: isMenuOpen ? 'none' : 'flex' }}
-				className='mobileMenu absolute top-0 bg-slate-800 w-full flex-col items-center'
+				style={{ display: isMenuOpen ? 'flex' : 'none' }}
+				className='mobileMenu absolute z-20 top-0 bg-slate-800 w-full flex-col items-center'
 			>
 				<a href='#'>Главная</a>
 				<a href='#'>О Нас</a>
