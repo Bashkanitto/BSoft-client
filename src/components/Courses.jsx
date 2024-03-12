@@ -32,6 +32,7 @@ const Courses = () => {
 					</p>
 				</div>
 				<div className='stackBtns flex flex-wrap gap-3 w-full md:w-5/6 h-[70px]'>
+					{/* stack btns here  */}
 					{stackList.map(item => (
 						<button
 							className='border rounded-lg flex p-2 items-center gap-2 h-[30px]'
@@ -43,11 +44,12 @@ const Courses = () => {
 					))}
 				</div>
 			</div>
-			<div className='courses-items justify-between flex flex-wrap gap-10'>
+			{/* images here */}
+			<div className='courses-items justify-center lg:justify-between flex flex-wrap gap-10'>
 				{coursesList.map(item => (
 					<div key={item.name} className='relative'>
 						<img
-							className='w-[370px] h-[400px] rounded-2xl'
+							className='w-[380px] h-[400px] rounded-2xl'
 							src={item.img}
 							alt='stackItem'
 						/>

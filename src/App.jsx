@@ -1,7 +1,9 @@
 import Courses from './components/Courses';
+import Goals from './components/Goals';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Stack from './components/Stack';
+import Team from './components/Team';
 
 function App() {
 	return (
@@ -10,6 +12,8 @@ function App() {
 			<Hero />
 			<Stack />
 			<Courses />
+			<Team />
+			<Goals />
 		</div>
 	);
 }
