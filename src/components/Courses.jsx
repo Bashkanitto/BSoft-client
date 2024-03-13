@@ -1,6 +1,6 @@
-import { stackList } from './Contants';
+import { stackList } from './Constants';
 import { SectionName } from './SectionName';
-import { coursesList } from './Contants';
+import { coursesList } from './Constants';
 
 const Courses = () => {
 	return (

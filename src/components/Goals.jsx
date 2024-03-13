@@ -1,11 +1,11 @@
-import { goalsList } from './Contants';
+import { goalsList } from './Constants';
 
 const Goals = () => {
 	return (
 		<section className='goals container-full xl:container mx-auto transition-all duration-300 flex md:flex-row gap-10 p-10 lg:flex-nowrap flex-wrap'>
-			{goalsList.map(item => (
+			{goalsList.map((item, index) => (
 				<div
-					key={item.name}
+					key={index}
 					className='relative flex flex-col p-10 gap-4 bg-center bg-cover'
 					style={{ backgroundImage: `url(${item.img})` }}
 				>

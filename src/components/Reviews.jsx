@@ -1,4 +1,4 @@
-import { reviewsList } from './Contants';
+import { reviewsList } from './Constants';
 import { SectionName } from './SectionName';
 import { ReviewStarRating } from '../utils/ReviewStartRating';
 

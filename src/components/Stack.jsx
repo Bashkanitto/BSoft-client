@@ -1,4 +1,4 @@
-import { stackList } from './Contants';
+import { stackList } from './Constants';
 import { SectionName } from './SectionName';
 
 const Stack = () => {

@@ -11,7 +11,7 @@ export const Accordion = ({ list }) => {
 		<div>
 			{list.map((item, index) => (
 				<div
-					key={item.question}
+					key={item.name}
 					style={{
 						height: activeQuestionId === index ? '200px' : '80px',
 					}}

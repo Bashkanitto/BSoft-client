@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { teamList } from './Contants';
+import { teamList } from './Constants';
 import { SectionName } from './SectionName';
-import { Accordion } from '../utils/Accordion';
+import { TeamAccordion } from '../utils/TeamAccordion';
+import { TeamAccordion2 } from '../utils/TeamAccordion2';
 
 const Team = () => {
 	return (
@@ -11,7 +11,8 @@ const Team = () => {
 		>
 			<SectionName number={'03'}>Наша Команда</SectionName>
 
-			<Accordion list={teamList} />
+			{/* <TeamAccordion list={teamList} /> */}
+			<TeamAccordion2 list={teamList} />
 		</section>
 	);
 };

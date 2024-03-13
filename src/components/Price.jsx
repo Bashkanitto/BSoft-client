@@ -1,4 +1,4 @@
-import { priceList } from './Contants';
+import { priceList } from './Constants';
 import { SectionName } from '../components/SectionName';
 
 const Price = () => {
@@ -9,9 +9,9 @@ const Price = () => {
 		>
 			<SectionName number={'05'}>Курсы по Доступной Цене</SectionName>
 			<div className='flex justify-center gap-10 flex-wrap lg:flex-nowrap'>
-				{priceList.map(item => (
+				{priceList.map((item, index) => (
 					<div
-						key={item.name}
+						key={index}
 						className='border flex rounded-xl p-4 md:p-10 w-full lg:w-1/2'
 					>
 						<div>

@@ -1,4 +1,4 @@
-import { questionsList } from './Contants';
+import { questionsList } from './Constants';
 import { SectionName } from './SectionName';
 import { Accordion } from '../utils/Accordion';
 
