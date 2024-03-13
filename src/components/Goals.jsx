@@ -6,7 +6,7 @@ const Goals = () => {
 			{goalsList.map((item, index) => (
 				<div
 					key={index}
-					className='relative flex flex-col p-10 gap-4 bg-center bg-cover'
+					className='relative flex flex-col p-10 gap-4 bg-center bg-cover hover:-translate-y-5 transition-all duration-700 hover:shadow-white shadow-lg'
 					style={{ backgroundImage: `url(${item.img})` }}
 				>
 					<h4 className='font-bold text-2xl'>{item.title}</h4>
