@@ -20,7 +20,7 @@ const Courses = () => {
 						современной индустрии.
 					</p>
 				</div>
-				<div className='stackBtns flex flex-wrap gap-3 w-full md:w-5/6 h-[70px]'>
+				<div className='stackBtns flex flex-wrap gap-3 w-full md:w-5/6 h-[70px] mb-10'>
 					{/* stack btns here  */}
 					{stackList.map(item => (
 						<button
