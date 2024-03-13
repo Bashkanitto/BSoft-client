@@ -13,33 +13,29 @@ export const Accordion = ({ list }) => {
 				<div
 					key={item.question}
 					style={{
-						height: activeQuestionId === index ? '200px' : '80px',
+						height: activeQuestionId === index ? '400px' : '80px',
 					}}
-					className='flex border-t w-full overflow-hidden transition-all duration-700'
+					className='flex items-center border-t w-full overflow-hidden transition-all duration-700'
 				>
 					<button
 						onClick={() => toggleTab(index)}
 						className='w-full text-start py-4 px-0 md:px-4 focus:outline-none'
 					>
-						<h4
-							style={
-								{
-									// paddingTop: activeQuestionId === index ? '0px' : '40px',
-								}
-							}
-							className='font-bold text-lg pb-2 transition duration-500'
-						>
-							{item.name}
-						</h4>
-
-						<div
-							style={{
-								opacity: activeQuestionId === index ? '1' : '0',
-							}}
-							className='w-full flex justify-between items-center transition-all duration-500'
-						>
+						<h4 className='font-bold text-lg'>{item.name}</h4>
+						<div className='py-4 w-full flex  justify-between items-center'>
 							<p className='w-1/2'>{item.text}</p>
+							{item.img && (
+								<img
+									src={item.img}
+									alt=''
+									className='w-[300px] rounded-[15%] object-cover object-10'
+									style={{
+										height: activeQuestionId === index ? '400px' : '80px',
+									}}
+								/>
+							)}
 						</div>
+						{/* )} */}
 					</button>
 				</div>
 			))}
