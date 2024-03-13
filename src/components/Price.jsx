@@ -1,17 +1,15 @@
 import { priceList } from './Contants';
+import { SectionName } from '../components/SectionName';
 
 const Price = () => {
 	return (
 		<section className='goals container-full xl:container mx-auto transition-all duration-300 flex flex-col gap-10 p-10'>
-			<div className='courses-intro flex flex-col md:flex-row items-center gap-3 mb-4'>
-				<span className='border rounded-lg p-2'>04</span>
-				<h3 className='text-2xl text-center'>Курсы по доступной цене</h3>
-			</div>
+			<SectionName number={'05'}>Курсы по Доступной Цене</SectionName>
 			<div className='flex justify-center gap-10 flex-wrap lg:flex-nowrap'>
 				{priceList.map(item => (
 					<div
 						key={item.name}
-						className='border flex rounded-xl p-10 items- w-1/2'
+						className='border flex rounded-xl p-4 md:p-10 w-full lg:w-1/2'
 					>
 						<div>
 							<h4 className='font-bold text-3xl mb-2'>{item.title}</h4>

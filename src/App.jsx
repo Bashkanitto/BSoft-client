@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Price from './components/Price';
 import Stack from './components/Stack';
+import Reviews from './components/Reviews';
 import Team from './components/Team';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
 			<Team />
 			<Goals />
 			<Price />
+			<Reviews />
 			<Footer />
 		</div>
 	);

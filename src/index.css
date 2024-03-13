@@ -24,3 +24,7 @@
 p {
 	font-size: 14px;
 }
+.container-md {
+	margin: 0 auto;
+	transition: 0.3s;
+}

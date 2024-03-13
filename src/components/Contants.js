@@ -87,3 +87,43 @@ export const priceList = [
 		price: '36,000 тенге / месяц',
 	},
 ];
+
+export const reviewsList = [
+	{
+		name: 'Ержан А.',
+		role: 'Фронтенд На React',
+		study: 'Студент ATY',
+		text: 'Я очень доволен тем, как быстро я научился программированию благодаря курсам BSoft. Учителя были профессионалами в своей области и были всегда готовы помочь мне.',
+		review: 3,
+	},
+	{
+		name: 'Ержан А.',
+		role: 'Фронтенд На React',
+		study: 'Студент ATY',
+		text: 'Я очень доволен тем, как быстро я научился программированию благодаря курсам BSoft. Учителя были профессионалами в своей области и были всегда готовы помочь мне.',
+		review: '5',
+		reverse: true,
+	},
+	{
+		name: 'Ержан А.',
+		role: 'Фронтенд На React',
+		study: 'Студент ATY',
+		text: 'Я очень доволен тем, как быстро я научился программированию благодаря курсам BSoft. Учителя были профессионалами в своей области и были всегда готовы помочь мне.',
+		review: '5',
+	},
+];
+
+export const coursesList = [
+	{
+		name: 'ReactJs from Zero to Hero',
+		img: 'images/imgCourse1.png',
+	},
+	{
+		name: 'NodeJs from Zero to Hero',
+		img: 'images/imgCourse2.png',
+	},
+	{
+		name: 'Data Analysis with Python',
+		img: 'images/imgCourse3.png',
+	},
+];
