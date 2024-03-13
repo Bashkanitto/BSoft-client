@@ -5,7 +5,7 @@ const Contact = () => {
 			className=' container-full lg:container mx-auto transition-all duration-300  flex flex-col gap-5 p-2 md:p-10'
 		>
 			<div
-				className='rounded-2xl border border-slate-950 md:border-stone-50 p-5 md:p-10 flex flex-col gap-10 bg-opacity-20 '
+				className='rounded-2xl border border-slate-950 md:border-stone-50 p-0 md:p-5 md:p-10 flex flex-col gap-10 bg-opacity-20 '
 				style={{ backgroundImage: `url(${'/images/imgFormBg.png'})` }}
 			>
 				<h5 className='text-2xl font-bold lg:text-4xl w-full sm:w-2/3 md:w-1/2 mb-4 flex'>

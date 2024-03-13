@@ -1,6 +1,6 @@
 const Footer = () => {
 	return (
-		<header className='container flex justify-between mx-auto h-[95px] items-center'>
+		<header className='container flex justify-between mx-auto h-[95px] items-center p-5'>
 			<img src='/images/logo.png' alt='logo' />
 			<nav className='hidden lg:flex gap-10 '>
 				<a href='#main'>Главная</a>
