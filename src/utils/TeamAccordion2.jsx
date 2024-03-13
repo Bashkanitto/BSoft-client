@@ -20,7 +20,7 @@ export const TeamAccordion2 = ({ list }) => {
 							height: activeQuestionId === index ? '400px' : '80px',
 							flexDirection: item.reverse == true ? 'row-reverse' : 'row',
 						}}
-						className='flex items-center overflow-hidden transition-all duration-700 w-full text-start md:px-4 focus:outline-none gap-2  p-10 my-10'
+						className='flex items-center overflow-hidden transition-all duration-700 w-full text-start md:px-4 focus:outline-none gap-2  p-2 md:p-10 my-10'
 					>
 						<div
 							style={{
