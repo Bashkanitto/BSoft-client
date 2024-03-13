@@ -14,7 +14,7 @@ const Contact = () => {
 				<form className='md:w-2/3 flex flex-col gap-6 w-full'>
 					<div className='flex flex-col md:flex-row gap-4 md:gap-10'>
 						<input type='text' name='name' placeholder='Имя' />
-						<input type='text' name='name' placeholder='Номер телефона' />
+						<input type='tel' name='name' placeholder='Номер телефона' />
 					</div>
 					<button
 						type='submit'
