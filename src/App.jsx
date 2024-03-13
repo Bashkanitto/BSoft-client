@@ -7,6 +7,7 @@ import Price from './components/Price';
 import Stack from './components/Stack';
 import Reviews from './components/Reviews';
 import Team from './components/Team';
+import Questions from './components/Questions';
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 			<Goals />
 			<Price />
 			<Reviews />
+			<Questions />
 			<Footer />
 		</div>
 	);

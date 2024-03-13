@@ -4,7 +4,7 @@ import { ReviewStarRating } from '../utils/ReviewStartRating';
 
 const Reviews = () => {
 	return (
-		<section className='courses container-full lg:container container-md flex flex-col gap-5 p-10'>
+		<section className='container-full lg:container customStyle-container flex flex-col gap-5 p-10'>
 			<SectionName number={'06'}>От наших любим клиентов</SectionName>
 			<div className='justify-center lg:justify-between flex flex-col gap-10'>
 				{reviewsList.map(item => (
