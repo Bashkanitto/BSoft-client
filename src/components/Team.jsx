@@ -10,7 +10,10 @@ const Team = () => {
 	};
 
 	return (
-		<section className='stack container-full lg:container mx-auto transition-all duration-300  flex flex-col gap-5 p-10'>
+		<section
+			id='team'
+			className='stack container-full lg:container mx-auto transition-all duration-300  flex flex-col gap-5 p-10'
+		>
 			<SectionName number={'03'}>Наша Команда</SectionName>
 
 			{teamList.map(item => (

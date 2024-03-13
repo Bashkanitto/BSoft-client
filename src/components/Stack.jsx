@@ -3,7 +3,10 @@ import { SectionName } from './SectionName';
 
 const Stack = () => {
 	return (
-		<section className='stack container-full lg:container mx-auto transition-all duration-300  flex flex-col gap-5 p-10'>
+		<section
+			id='about'
+			className='stack container-full lg:container mx-auto transition-all duration-300  flex flex-col gap-5 p-10'
+		>
 			<SectionName number={'01'}>
 				Стэк Технологии с которыми работаем
 			</SectionName>

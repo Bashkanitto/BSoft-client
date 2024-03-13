@@ -4,7 +4,10 @@ import { ReviewStarRating } from '../utils/ReviewStartRating';
 
 const Reviews = () => {
 	return (
-		<section className='container-full lg:container customStyle-container flex flex-col gap-5 p-10'>
+		<section
+			id='reviews'
+			className='container-full lg:container customStyle-container flex flex-col gap-5 p-10'
+		>
 			<SectionName number={'06'}>От наших любим клиентов</SectionName>
 			<div className='justify-center lg:justify-between flex flex-col gap-10'>
 				{reviewsList.map(item => (
@@ -13,7 +16,7 @@ const Reviews = () => {
 						style={{ alignSelf: item.reverse ? 'end' : 'start' }}
 						className='border p-4 rounded-2xl w-full lg:w-1/2'
 					>
-						<p className='text-xs mb-5'>{item.text}</p>
+						<p className='text-sm mb-5'>{item.text}</p>
 						<div className='flex justify-between'>
 							<h6>
 								{item.name} / {item.role} / {item.study}

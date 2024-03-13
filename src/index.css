@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
+	scroll-behavior: smooth;
 	font-family: 'Mulish', sans-serif;
 
 	color-scheme: light dark;
@@ -28,4 +29,21 @@ p {
 	margin: 0 auto;
 	transition: 0.3s;
 	display: flex;
+}
+
+input {
+	background: transparent;
+	border: 1px solid white;
+	border-radius: 7px;
+	padding: 10px 10px;
+	width: 100%;
+	font-size: 14px;
+	color: white;
+}
+input:focus {
+	outline: none;
+}
+
+input::placeholder {
+	color: white;
 }

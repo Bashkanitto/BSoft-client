@@ -8,6 +8,7 @@ import Stack from './components/Stack';
 import Reviews from './components/Reviews';
 import Team from './components/Team';
 import Questions from './components/Questions';
+import Contact from './components/Contact';
 
 function App() {
 	return (
@@ -21,6 +22,7 @@ function App() {
 			<Price />
 			<Reviews />
 			<Questions />
+			<Contact />
 			<Footer />
 		</div>
 	);

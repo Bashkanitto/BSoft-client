@@ -4,7 +4,10 @@ import { coursesList } from './Contants';
 
 const Courses = () => {
 	return (
-		<section className='courses container-full lg:container mx-auto transition-all duration-300 flex flex-col gap-5 p-10'>
+		<section
+			id='courses'
+			className='courses container-full lg:container mx-auto transition-all duration-300 flex flex-col gap-5 p-10'
+		>
 			<div className='devide flex flex-col md:flex-row'>
 				<div className='devide-item'>
 					<SectionName number={'02'}>Мы Предлагаем Курсы</SectionName>

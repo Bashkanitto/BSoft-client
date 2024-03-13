@@ -2,7 +2,10 @@ import { ArrowUpRight, PlayCircle } from 'lucide-react';
 
 const Hero = () => {
 	return (
-		<section className='hero container-full lg:container mx-auto transition-all duration-300'>
+		<section
+			id='main'
+			className='hero container-full lg:container mx-auto transition-all duration-300'
+		>
 			<div className='relative flex justify-center items-center'>
 				<img
 					src='/images/imgHero.png'
