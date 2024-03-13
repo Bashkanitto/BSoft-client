@@ -5,7 +5,7 @@ const Price = () => {
 	return (
 		<section
 			id='price'
-			className='goals container-full xl:container mx-auto transition-all duration-300 flex flex-col gap-10 p-10'
+			className='goals container-full xl:container mx-auto transition-all duration-300 flex flex-col gap-10 p-2 md:p-10'
 		>
 			<SectionName number={'05'}>Курсы по Доступной Цене</SectionName>
 			<div className='flex justify-center gap-10 flex-wrap lg:flex-nowrap'>

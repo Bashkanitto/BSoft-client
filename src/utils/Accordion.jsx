@@ -8,7 +8,7 @@ export const Accordion = ({ list }) => {
 	};
 
 	return (
-		<div>
+		<div className='w-full'>
 			{list.map((item, index) => (
 				<div
 					key={item.name}
@@ -21,14 +21,7 @@ export const Accordion = ({ list }) => {
 						onClick={() => toggleTab(index)}
 						className='w-full text-start py-4 px-0 md:px-4 focus:outline-none'
 					>
-						<h4
-							style={
-								{
-									// paddingTop: activeQuestionId === index ? '0px' : '40px',
-								}
-							}
-							className='font-bold text-lg pb-2 transition duration-500'
-						>
+						<h4 className='font-bold text-lg pb-2 transition duration-500'>
 							{item.name}
 						</h4>
 
@@ -38,7 +31,7 @@ export const Accordion = ({ list }) => {
 							}}
 							className='w-full flex justify-between items-center transition-all duration-500'
 						>
-							<p className='w-1/2'>{item.text}</p>
+							<p className='w-full md:w-1/2'>{item.text}</p>
 						</div>
 					</button>
 				</div>

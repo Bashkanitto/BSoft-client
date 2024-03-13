@@ -6,7 +6,7 @@ const Courses = () => {
 	return (
 		<section
 			id='courses'
-			className='courses container-full lg:container mx-auto transition-all duration-300 flex flex-col gap-5 p-10'
+			className='container-full lg:container mx-auto transition-all duration-300 flex flex-col gap-5 p-2 md:p-10'
 		>
 			<div className='devide flex flex-col md:flex-row'>
 				<div className='devide-item'>

@@ -1,6 +1,5 @@
 import { teamList } from './Constants';
 import { SectionName } from './SectionName';
-import { TeamAccordion } from '../utils/TeamAccordion';
 import { TeamAccordion2 } from '../utils/TeamAccordion2';
 
 const Team = () => {
@@ -11,7 +10,6 @@ const Team = () => {
 		>
 			<SectionName number={'03'}>Наша Команда</SectionName>
 
-			{/* <TeamAccordion list={teamList} /> */}
 			<TeamAccordion2 list={teamList} />
 		</section>
 	);

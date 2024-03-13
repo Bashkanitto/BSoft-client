@@ -6,7 +6,7 @@ const Reviews = () => {
 	return (
 		<section
 			id='reviews'
-			className='container-full lg:container customStyle-container flex flex-col gap-5 p-10'
+			className='container-full lg:container customStyle-container flex flex-col gap-5 p-2 md:p-10'
 		>
 			<SectionName number={'06'}>От наших любим клиентов</SectionName>
 			<div className='justify-center lg:justify-between flex flex-col gap-10'>

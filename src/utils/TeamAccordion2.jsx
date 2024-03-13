@@ -17,7 +17,7 @@ export const TeamAccordion2 = ({ list }) => {
 					style={{
 						height: activeQuestionId === index ? '400px' : '80px',
 						flexDirection: item.reverse == true ? 'row-reverse' : 'row',
-						border: activeQuestionId == index && '1px solid white',
+						border: activeQuestionId == index ? '1px solid white' : 'none',
 						borderTop: '1px solid white',
 						borderRadius: activeQuestionId == index ? '20px' : '0',
 					}}
@@ -36,7 +36,7 @@ export const TeamAccordion2 = ({ list }) => {
 							style={{
 								opacity: activeQuestionId === index ? '1' : '0',
 							}}
-							className='w-1/2'
+							className='w-full md:w-1/2'
 						>
 							{item.text}
 						</p>
@@ -44,7 +44,7 @@ export const TeamAccordion2 = ({ list }) => {
 					{item.img && (
 						<img
 							src={item.img}
-							className=' rounded-[10px] object-cover transition-all duration-500'
+							className='hidden lg:flex rounded-[10px] object-cover transition-all duration-500'
 							style={{
 								height: activeQuestionId === index ? '320px' : '320px',
 							}}

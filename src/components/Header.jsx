@@ -24,13 +24,13 @@ const Header = () => {
 				style={{ display: isMenuOpen ? 'flex' : 'none' }}
 				className='mobileMenu absolute z-20 top-0 bg-slate-800 w-full flex-col items-center'
 			>
-				<a href='#'>Главная</a>
-				<a href='#'>О Нас</a>
-				<a href='#'>Курсы</a>
-				<a href='#'>Отзывы</a>
-				<a href='#'>Прайс</a>
-				<a href='#'>Команда</a>
-				<a href='#'>Контакты</a>
+				<a href='#main'>Главная</a>
+				<a href='#about'>О Нас</a>
+				<a href='#courses'>Курсы</a>
+				<a href='#reviews'>Отзывы</a>
+				<a href='#price'>Прайс</a>
+				<a href='#team'>Команда</a>
+				<a href='#contact'>Контакты</a>
 			</nav>
 			<button onClick={handleMenuOpen} className='flex lg:hidden'>
 				<AlignCenter />
