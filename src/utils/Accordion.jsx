@@ -18,7 +18,7 @@ export const Accordion = ({ list }) => {
 						<h4 className='font-bold text-lg'>{item.question}</h4>
 					</button>
 					{activeQuestionId === index && (
-						<div className='py-2'>
+						<div className='pb-4 w-full md:w-2/3'>
 							<p>{item.answer}</p>
 						</div>
 					)}
