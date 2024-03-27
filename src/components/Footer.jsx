@@ -12,9 +12,12 @@ const Footer = () => {
 				<a href='#contact'>Контакты</a>
 			</nav>
 			<div className='flex gap-5'>
-				<button className='border p-2 hover:bg-white hover:text-black transition rounded-lg text-sm flex gap-1 items-center'>
+				<a
+					href='https://www.instagram.com/bsoft_smavy/'
+					className='border p-2 hover:bg-white hover:text-black transition rounded-lg text-sm flex gap-1 items-center'
+				>
 					instagram
-				</button>
+				</a>
 				<button className='border p-2 hover:bg-white hover:text-black transition rounded-lg text-sm flex gap-1 items-center'>
 					Tik Tok
 				</button>
