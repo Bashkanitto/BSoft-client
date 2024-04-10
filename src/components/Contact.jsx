@@ -2,12 +2,10 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className=" container-full lg:container mx-auto transition-all duration-300  flex flex-col gap-5 p-2 md:p-10"
+      className="container-full lg:container mx-auto transition-all duration-300 flex flex-col gap-5 p-2 md:p-10"
     >
-      <div className="rounded-2xl border border-slate-950 md:border-stone-50  md:p-5 flex flex-col gap-5 bg-opacity-20 p-20 h-[240px]">
-        <h5 className="text-3xl font-bold text-center">
-          <span> Наши Контакты</span>
-        </h5>
+      <div className="rounded-2xl border border-slate-950 md:border-stone-50  flex flex-col gap-5 bg-opacity-20 p-5 md:p-10">
+        <h5 className="text-3xl font-bold text-center">Наши Контакты</h5>
         <p className="text-lg font-bold text-center">
           Email: smavyip@gmail.com
         </p>
