@@ -8,7 +8,7 @@ const Reviews = () => {
 			id='reviews'
 			className='container-full lg:container customStyle-container flex flex-col gap-5 p-2 md:p-10'
 		>
-			<SectionName number={'06'}>От наших любим клиентов</SectionName>
+			<SectionName number={'06'}>От наших любимых студентов</SectionName>
 			<div className='justify-center lg:justify-between flex flex-col gap-10'>
 				{reviewsList.map(item => (
 					<div

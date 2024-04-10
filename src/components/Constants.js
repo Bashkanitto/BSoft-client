@@ -1,19 +1,15 @@
 export const stackList = [
 	{
-		name: 'NodeJs',
-		img: 'images/stack2.png',
+		name: 'JavaScript',
+		img: 'images/javascript-white.svg',
 	},
 	{
-		name: 'Flutter',
-		img: 'images/stack3.png',
+		name: 'Dart',
+		img: 'images/dart-white.svg',
 	},
 	{
-		name: 'Python',
-		img: 'images/stack4.png',
-	},
-	{
-		name: 'React Js',
-		img: 'images/stack5.png',
+		name: 'Java',
+		img: 'images/java-white.svg',
 	},
 	{
 		name: 'Android Studio',
@@ -25,14 +21,42 @@ export const teamList = [
 	{
 		name: 'Даулет Дауитбек',
 		role: 'Ментор по веб разработке',
-		text: 'Программа "Менторство в IT" предназначена для опытных IT-специалистов, желающих поделиться своими знаниями и опытом через наставничество, а также для тех, кто стремится стать эффективными менторами в технологической сфере. Курс охватывает ключевые аспекты менторства, включая методы коммуникации, стратегии обучения, психологию наставничества и развитие лидерских качеств, необходимых для поддержки и развития IT-специалистов на разных этапах их карьеры.',
-		img: '/images/imgDaulet.jpg',
+		text: 'Старший веб-инженер в Берлинской компании, Hopkins Tech 7 летний опыт в сфере ИТ и в разработке веб приложении. 3 летний опыт в сфере профильного образования и менторства.',
+		img: '/images/daulet.jpg',
 	},
 	{
 		name: 'Рауан Жақсыбаев',
 		role: 'Ментор по мобильной разработке',
-		img: '/images/imgRauan.jpg',
-		text: 'Программа "Менторство в IT" предназначена для опытных IT-специалистов, желающих поделиться своими знаниями и опытом через наставничество, а также для тех, кто стремится стать эффективными менторами в технологической сфере. Курс охватывает ключевые аспекты менторства, включая методы коммуникации, стратегии обучения, психологию наставничества и развитие лидерских качеств, необходимых для поддержки и развития IT-специалистов на разных этапах их карьеры.',
+		img: '/images/rauan.jpg',
+		text: '9-летний опыт работы в сфере IT. Участие в крупных банковских и финтех проектах как Kaspi Pay, Tayyab, Wio Bank в ОАЕ. Многолетний опыт в сфере образования по предметам Математика и Информатика.',
+		link: 'https://www.linkedin.com/in/rauan-zhaxibayev-6a2940103/',
+		reverse: true,
+	},
+	{
+		name: 'Бахытжан Мыктыбаев',
+		role: 'Преподаватель по Introduction to programming with Java, Dart.',
+		text: 'Учитель по Мобильной разработке. Большой опыт в преподавании информатики. Магистр педагогических наук.',
+		img: '/images/bakhytzhan-myhtybaev.jpg',
+
+	},
+	{
+		name: 'Рысбек Әлнұр',
+		role: 'Помощник учителя по курсу Introduction to programming with Java, Dart. Выпускник JIHC.',
+		text: 'Победитель Республиканской олимпиады WorldSkills.',
+		reverse: true,
+	},
+	{
+		name: 'Алмаз Анарбеков',
+		role: 'Учитель по курсу Introduction to programming with Javascript.',
+		text: 'Бакалавр педагогических наук. Опыт в преподавании больше 3 лет',
+		img: '/images/almaz-anarbek.JPG',
+
+	},
+	{
+		name: 'Айдын Мейрамханулы',
+		role: 'Помощник учителя по курсу Introduction to programming with Javascript.',
+		text: 'Выпускник JIHC. Фриланс веб разработчик со стажем 2 года',
+		img: '/images/aidyn.jpg',
 		reverse: true,
 	},
 ];
@@ -61,7 +85,7 @@ export const priceList = [
 		description: 'Изучение основных навыков программирования',
 		img: '/images/imgPrice1.png',
 		list: [
-			'Офлайн обучение',
+			'Гибридное обучение(оффлайн/онлайн)',
 			'Связь с предоподователем',
 			'Промежуточные тесты',
 			'Домашние задания',
@@ -86,52 +110,55 @@ export const priceList = [
 
 export const reviewsList = [
 	{
-		name: 'Ержан А.',
-		role: 'Фронтенд На React',
-		study: 'Студент ATY',
-		text: 'Я очень доволен тем, как быстро я научился программированию благодаря курсам BSoft. Учителя были профессионалами в своей области и были всегда готовы помочь мне.',
-		review: 3,
+		name: 'Ердаулет А.',
+		role: 'Java',
+		study: 'Студент ENU',
+		text: 'Пройдя курсы BSoft по Android-разработке я освоил самые нужные навыки за короткое время. Мне понравился контент курса, никакой воды и самое главное мне помогли пройти собеседования.',
+		review: 5,
 	},
 	{
-		name: 'Ержан А.',
-		role: 'Фронтенд На React',
-		study: 'Студент ATY',
-		text: 'Я очень доволен тем, как быстро я научился программированию благодаря курсам BSoft. Учителя были профессионалами в своей области и были всегда готовы помочь мне.',
+		name: 'Нурсултан А.',
+		role: 'JavaScript',
+		study: 'Студент ITU',
+		text: 'В курсе по основам программирования на JavaScript мне особенно понравилась подача контента кураторов, большое количество практических задач. Обратная связь от кураторов дает возможность идти дальше.',
 		review: '5',
 		reverse: true,
 	},
 	{
-		name: 'Ержан А.',
-		role: 'Фронтенд На React',
+		name: 'Нурзат М.',
+		role: 'Dart',
 		study: 'Студент ATY',
-		text: 'Я очень доволен тем, как быстро я научился программированию благодаря курсам BSoft. Учителя были профессионалами в своей области и были всегда готовы помочь мне.',
+		text: 'Обучение в IT-школе стало для меня настоящим открытием! Практический подход преподавателей и интересные задания помогли мне лучше понять основы программирования.',
 		review: '5',
 	},
 ];
 
 export const coursesList = [
 	{
-		name: 'Веб программирование на Js',
-		img: 'images/imgCourse1.png',
+		name1: 'introduction to web programming HTML, CSS, JavaScript',
+		img: 'images/javascript-color.svg',
+		pdfSrc: 'src/PDF/Bsoft_Introduction_to_web_programming_HTML,_CSS,_JavaScript_1.pdf'
 	},
 	{
-		name: 'Мобильное программирование на Dart',
-		img: 'images/imgCourse2.png',
+		name2: 'Introduction to programming with Dart',
+		img: 'images/dart- color.svg',
+		pdfSrc: 'src/PDF/Bsoft_Introduction to programming with Dart (1).pdf'
 	},
 	{
-		name: 'Введение в программирование на Java',
-		img: 'images/imgCourse3.png',
+		name3: 'Introduction to programming with Java',
+		img: 'images/java-color.svg',
+		pdfSrc: 'src/PDF/Bsoft_Introduction to programming with Java (1).pdf'
 	},
 ];
 
 export const questionsList = [
 	{
 		name: 'Какие Языки Программирования Преподаются?',
-		text: 'Мы предлагаем изучение широко применяемых языков программирования, таких как Java, Python, JavaScript и Dart.',
+		text: 'Мы предлагаем изучение широко применяемых языков программирования, таких как Java, JavaScript и Dart.',
 	},
 	{
 		name: 'Какие курсы доступны',
-		text: 'Школа предлагает продвинутые курсы по фронтенд-разработке с помощью ReactJs, бэкэнд-разработке на NodeJs, мобильной разработке на Flutter и Android и анализу данных с помощью Python. Так же курс Современных инструментов',
+		text: 'Школа предлагает курсы по основам программирования с помощью Html, Css, JavaScript, мобильной разработке на Java и Dart.',
 	},
 	{
 		name: 'Какие Предварительные Требования Для Курсов?',
