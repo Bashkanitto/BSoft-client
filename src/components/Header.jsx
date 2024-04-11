@@ -1,15 +1,25 @@
 import { ArrowUpRight, AlignCenter } from "lucide-react";
 import { useState } from "react";
+
 const scrollToBottom = () => {
   window.scrollTo({
     top: document.documentElement.scrollHeight,
     behavior: "smooth",
   });
 };
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const handleMenuOpen = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById("info");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -17,7 +27,9 @@ const Header = () => {
       <img src="/images/logo.png" alt="logo" />
       <nav className="hidden lg:flex gap-10 ">
         <a href="#main">Главная</a>
-        <a href="#about">О Нас</a>
+        <a href="#info" onClick={scrollToAbout}>
+          О Нас
+        </a>
         <a href="#courses">Курсы</a>
         <a href="#reviews">Отзывы</a>
         <a href="#price">Прайс</a>
@@ -30,7 +42,9 @@ const Header = () => {
         className="mobileMenu absolute z-20 top-0 bg-slate-800 w-full flex-col items-center"
       >
         <a href="#main">Главная</a>
-        <a href="#about">О Нас</a>
+        <a href="#info" onClick={scrollToAbout}>
+          О Нас
+        </a>
         <a href="#courses">Курсы</a>
         <a href="#reviews">Отзывы</a>
         <a href="#price">Прайс</a>

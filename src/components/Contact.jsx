@@ -21,7 +21,7 @@ const Contact = () => {
         style={{ backgroundImage: `url(${"/images/imgFormBg.png"})` }}
       >
         <h5 className="text-2xl font-bold lg:text-4xl w-full sm:w-2/3 md:w-1/2 mb-4 flex">
-          Мы свяжемся с вами как только сможем в течении 24 часов.
+          Мы свяжемся с вами как только сможем в течение 24 часов.
         </h5>
         <form className="md:w-2/3 flex flex-col gap-6 w-full">
           <div className="flex flex-col md:flex-row gap-4 md:gap-10">

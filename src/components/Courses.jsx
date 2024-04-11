@@ -14,7 +14,6 @@ const Courses = () => {
       <div className="devide flex flex-col md:flex-row">
         <div className="devide-item">
           <SectionName number={"02"}>Мы Предлагаем Курсы</SectionName>
-
           <p className="w-full md:w-4/5 text-center md:text-start mb-4">
             Здесь вы найдете широкий выбор обучающих программ, позволяющих
             расширить ваши знания и навыки в области информационных технологий.
@@ -53,9 +52,10 @@ const Courses = () => {
               >
                 {item.name}
               </button>
-              
             </div>
-            <p className="w-[300px] h-[150px] p-3 m-3 border rounded-lg">{item.description}</p>
+            <p className="w-[300px] h-[150px] p-3 m-3 border rounded-lg">
+              {item.description}
+            </p>
           </div>
         ))}
       </div>
