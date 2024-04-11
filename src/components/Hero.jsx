@@ -1,4 +1,10 @@
 import { ArrowUpRight, PlayCircle } from "lucide-react";
+const scrollToBottom = () => {
+  window.scrollTo({
+    top: document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
+};
 
 const Hero = () => {
   return (
@@ -21,7 +27,10 @@ const Hero = () => {
               Освойте фундаментальные навыки IT вместе с нашей школой!
             </p>
             <div className="hero-btns flex gap-4 text-xs">
-              <button className="bg-white rounded-lg p-2 flex items-center text-black gap-1 hover:bg-black hover:text-white transition duration-500">
+              <button
+                className="bg-white rounded-lg p-2 flex items-center text-black gap-1 hover:bg-black hover:text-white transition duration-500"
+                onClick={scrollToBottom}
+              >
                 <ArrowUpRight className="w-4 h-4" />
                 Связатся с Нами
               </button>
