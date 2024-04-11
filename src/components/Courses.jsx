@@ -1,10 +1,9 @@
-import { stackList } from "./Constants";
+import { coursesList, stackList } from "./Constants";
 import { SectionName } from "./SectionName";
-import { coursesList } from "./Constants";
 
 const Courses = () => {
   const openPdf = (pdfSrc) => {
-    window.open(pdfSrc, '_blank');
+    window.open(pdfSrc, "_blank");
   };
 
   return (
@@ -38,32 +37,25 @@ const Courses = () => {
         </div>
       </div>
       {/* images here */}
+
       <div className="courses-items justify-center lg:justify-between flex flex-wrap gap-10">
         {coursesList.map((item) => (
-          <div key={item.name} className="relative">
+          <div key={item.name} className="relative flex flex-col items-center">
             <img
-              className="w-[350px] h-[400px] rounded-2xl"
+              className="w-[250px] h-[250px] rounded-2xl mb-4"
               src={item.img}
               alt="stackItem"
             />
-            <button
-              className="absolute bottom-0 border rounded-lg p-1 text-sm m-2 hover:bg-white hover:text-black transition duration-500"
-              onClick={() => openPdf(item.pdfSrc)} // Вызов функции openPdf при нажатии на кнопку
-            >
-              {item.name1}
-            </button>
-            <button
-              className="absolute bottom-0 border rounded-lg p-1 text-sm m-2 hover:bg-white hover:text-black transition duration-500"
-              onClick={() => openPdf(item.pdfSrc)} // Вызов функции openPdf при нажатии на кнопку
-            >
-              {item.name2}
-            </button>
-            <button
-              className="absolute bottom-0 border rounded-lg p-1 text-sm m-2 hover:bg-white hover:text-black transition duration-500"
-              onClick={() => openPdf(item.pdfSrc)} // Вызов функции openPdf при нажатии на кнопку
-            >
-              {item.name3}
-            </button>
+            <div className="flex gap-2">
+              <button
+                className="border rounded-lg p-1 text-sm hover:bg-white hover:text-black transition duration-500"
+                onClick={() => openPdf(item.pdfSrc)}
+              >
+                {item.name}
+              </button>
+              
+            </div>
+            <p className="w-[300px] h-[150px] p-3 m-3 border rounded-lg">{item.description}</p>
           </div>
         ))}
       </div>
@@ -72,4 +64,3 @@ const Courses = () => {
 };
 
 export default Courses;
-

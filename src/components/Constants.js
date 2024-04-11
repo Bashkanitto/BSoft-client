@@ -5,17 +5,12 @@ export const stackList = [
 	},
 	{
 		name: 'Dart',
-		img: 'images/dart-white.svg',
+		img: 'images/icons8-dart.svg',
 	},
 	{
 		name: 'Java',
 		img: 'images/java-white.svg',
-	},
-	{
-		name: 'Android Studio',
-		img: 'images/stack6.png',
-	},
-];
+	},]
 
 export const teamList = [
 	{
@@ -30,7 +25,7 @@ export const teamList = [
 		img: '/images/rauan.jpg',
 		text: '9-летний опыт работы в сфере IT. Участие в крупных банковских и финтех проектах как Kaspi Pay, Tayyab, Wio Bank в ОАЕ. Многолетний опыт в сфере образования по предметам Математика и Информатика.',
 		link: 'https://www.linkedin.com/in/rauan-zhaxibayev-6a2940103/',
-		reverse: true,
+
 	},
 	{
 		name: 'Бахытжан Мыктыбаев',
@@ -43,7 +38,7 @@ export const teamList = [
 		name: 'Рысбек Әлнұр',
 		role: 'Помощник учителя по курсу Introduction to programming with Java, Dart. Выпускник JIHC.',
 		text: 'Победитель Республиканской олимпиады WorldSkills.',
-		reverse: true,
+		img: '/images/Ryzbeke.jpg'
 	},
 	{
 		name: 'Алмаз Анарбеков',
@@ -57,7 +52,6 @@ export const teamList = [
 		role: 'Помощник учителя по курсу Introduction to programming with Javascript.',
 		text: 'Выпускник JIHC. Фриланс веб разработчик со стажем 2 года',
 		img: '/images/aidyn.jpg',
-		reverse: true,
 	},
 ];
 
@@ -98,7 +92,7 @@ export const priceList = [
 		description: 'Изучение продвинутых навыков программирования',
 		img: '/images/imgPrice2.png',
 		list: [
-			'Офлайн обучение',
+			'Гибридное обучение(оффлайн/онлайн)',
 			'Связь с предоподователем',
 			'Промежуточные тесты и домашние задания',
 			'Индивидуальные и групповые проекты',
@@ -135,19 +129,20 @@ export const reviewsList = [
 
 export const coursesList = [
 	{
-		name1: 'introduction to web programming HTML, CSS, JavaScript',
+		name: 'introduction to web programming HTML, CSS, JavaScript',
 		img: 'images/javascript-color.svg',
-		pdfSrc: 'src/PDF/Bsoft_Introduction_to_web_programming_HTML,_CSS,_JavaScript_1.pdf'
+		pdfSrc: 'public/assets/pdfs/Bsoft_Introduction_to_web_programming_HTML,_CSS,_JavaScript_1.pdf',
+		description: 'Курс " Introduction to programming with JavaScript" обучает основам языка программирования. По окончании студенты смогут писать код на JavaScript и будут готовы к изучению React и Node.js.'
 	},
 	{
-		name2: 'Introduction to programming with Dart',
+		name: 'Introduction to programming with Dart',
 		img: 'images/dart- color.svg',
-		pdfSrc: 'src/PDF/Bsoft_Introduction to programming with Dart (1).pdf'
+		description: 'Курс “Introduction to programming with Dart” для новичков. Вы освоите синтаксис Dart и базовые концепции ООП, готовясь к дальнейшему изучению Flutter."'
 	},
 	{
-		name3: 'Introduction to programming with Java',
+		name: 'Introduction to programming with Java',
 		img: 'images/java-color.svg',
-		pdfSrc: 'src/PDF/Bsoft_Introduction to programming with Java (1).pdf'
+		description: 'Курс "Introduction to programming with Java" обучает базовым принципам Java и созданию простых программ, подготавливая к дальнейшему изучению и разработке сложных приложений.'
 	},
 ];
 
