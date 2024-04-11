@@ -9,7 +9,7 @@ import Reviews from "./components/Reviews";
 import Team from "./components/Team";
 import Questions from "./components/Questions";
 import Contact from "./components/Contact";
-import AboutUs from "./components/AboutUs";
+import InfoUs from "./components/InfoUs";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
       <Hero />
       <Stack />
       <Courses />
-      <AboutUs />
+      <InfoUs />
       <Team />
       <Goals />
       <Price />
