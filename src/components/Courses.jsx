@@ -51,21 +51,11 @@ const Courses = () => {
                 className="border rounded-lg p-1 text-sm hover:bg-white hover:text-black transition duration-500"
                 onClick={() => openPdf(item.pdfSrc)}
               >
-                {item.name1}
+                {item.name}
               </button>
-              <button
-                className="border rounded-lg p-1 text-sm hover:bg-white hover:text-black transition duration-500"
-                onClick={() => openPdf(item.pdfSrc)}
-              >
-                {item.name2}
-              </button>
-              <button
-                className="border rounded-lg p-1 text-sm hover:bg-white hover:text-black transition duration-500"
-                onClick={() => openPdf(item.pdfSrc)}
-              >
-                {item.name3}
-              </button>
+              
             </div>
+            <p className="w-[300px] h-[150px] p-3 m-3 border rounded-lg">{item.description}</p>
           </div>
         ))}
       </div>

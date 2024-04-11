@@ -129,20 +129,20 @@ export const reviewsList = [
 
 export const coursesList = [
 	{
-		name1: 'introduction to web programming HTML, CSS, JavaScript',
+		name: 'introduction to web programming HTML, CSS, JavaScript',
 		img: 'images/javascript-color.svg',
 		pdfSrc: 'public/assets/pdfs/Bsoft_Introduction_to_web_programming_HTML,_CSS,_JavaScript_1.pdf',
-		description1: 'Курс " Introduction to programming with JavaScript" обучает основам языка программирования. По окончании студенты смогут писать код на JavaScript и будут готовы к изучению React и Node.js.'
+		description: 'Курс " Introduction to programming with JavaScript" обучает основам языка программирования. По окончании студенты смогут писать код на JavaScript и будут готовы к изучению React и Node.js.'
 	},
 	{
-		name2: 'Introduction to programming with Dart',
+		name: 'Introduction to programming with Dart',
 		img: 'images/dart- color.svg',
-		description2: 'Курс “Introduction to programming with Dart” для новичков. Вы освоите синтаксис Dart и базовые концепции ООП, готовясь к дальнейшему изучению Flutter."'
+		description: 'Курс “Introduction to programming with Dart” для новичков. Вы освоите синтаксис Dart и базовые концепции ООП, готовясь к дальнейшему изучению Flutter."'
 	},
 	{
-		name3: 'Introduction to programming with Java',
+		name: 'Introduction to programming with Java',
 		img: 'images/java-color.svg',
-		description3: 'Курс "Introduction to programming with Java" обучает базовым принципам Java и созданию простых программ, подготавливая к дальнейшему изучению и разработке сложных приложений.'
+		description: 'Курс "Introduction to programming with Java" обучает базовым принципам Java и созданию простых программ, подготавливая к дальнейшему изучению и разработке сложных приложений.'
 	},
 ];
 
