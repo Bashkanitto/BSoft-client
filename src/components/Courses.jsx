@@ -1,9 +1,19 @@
 import { coursesList, stackList } from "./Constants";
 import { SectionName } from "./SectionName";
+import Modal from "./Modal";
+import { useState } from "react";
 
 const Courses = () => {
-  const openPdf = (pdfSrc) => {
-    window.open(pdfSrc, "_blank");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedCourseImages, setSelectedCourseImages] = useState([]);
+
+  const openModal = (images) => {
+    setSelectedCourseImages(images);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -48,7 +58,7 @@ const Courses = () => {
             <div className="flex gap-2">
               <button
                 className="border rounded-lg p-1 text-sm hover:bg-white hover:text-black transition duration-500"
-                onClick={() => openPdf(item.pdfSrc)}
+                onClick={() => openModal(item.images)}
               >
                 {item.name}
               </button>
@@ -59,6 +69,9 @@ const Courses = () => {
           </div>
         ))}
       </div>
+      {isModalOpen && (
+        <Modal images={selectedCourseImages} closeModal={closeModal} />
+      )}
     </section>
   );
 };
