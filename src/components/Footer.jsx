@@ -1,10 +1,18 @@
+const scrollToAbout = () => {
+  const aboutSection = document.getElementById("info");
+  if (aboutSection) {
+    aboutSection.scrollIntoView({ behavior: "smooth" });
+  }
+};
 const Footer = () => {
   return (
     <header className="container flex justify-between mx-auto h-[95px] items-center p-5">
       <img src="/images/logo.png" alt="logo" />
       <nav className="hidden lg:flex gap-10 ">
         <a href="#main">Главная</a>
-        <a href="#stack">О Нас</a>
+        <a href="#info" onClick={scrollToAbout}>
+          О Нас
+        </a>
         <a href="#courses">Курсы</a>
         <a href="#reviews">Отзывы</a>
         <a href="#price">Прайс</a>
