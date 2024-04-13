@@ -4,39 +4,51 @@
       "name": "dart pdfs",
       "images": [
         {
+          "index": 1,
           "src": "/dart pdfs/webpBsoft_Introduction to programming with Dart (1)-1.webp"
         },
         {
+          "index": 2,
           "src": "/dart pdfs/webpBsoft_Introduction to programming with Dart (1)-2.webp"
         },
         {
+          "index": 3,
           "src": "/dart pdfs/webpBsoft_Introduction to programming with Dart (1)-3.webp"
         },
         {
+          "index": 4,
           "src": "/dart pdfs/webpBsoft_Introduction to programming with Dart (1)-4.webp"
         },
         {
+          "index": 5,
           "src": "/dart pdfs/webpBsoft_Introduction to programming with Dart (1)-5.webp"
         },
         {
+          "index": 6,
           "src": "/dart pdfs/webpBsoft_Introduction to programming with Dart (1)-6.webp"
         },
         {
+          "index": 7,
           "src": "/dart pdfs/webpBsoft_Introduction to programming with Dart (1)-7.webp"
         },
         {
+          "index": 8,
           "src": "/dart pdfs/webpBsoft_Introduction to programming with Dart (1)-8.webp"
         },
         {
+          "index": 9,
           "src": "/dart pdfs/webpBsoft_Introduction to programming with Dart (1)-9.webp"
         },
         {
+          "index": 10,
           "src": "/dart pdfs/webpBsoft_Introduction to programming with Dart (1)-10.webp"
         },
         {
+          "index": 11,
           "src": "/dart pdfs/webpBsoft_Introduction to programming with Dart (1)-11.webp"
         },
         {
+          "index": 12,
           "src": "/dart pdfs/webpBsoft_Introduction to programming with Dart (1)-12.webp"
         }
       ]
@@ -44,40 +56,40 @@
     {
       "name": "java pdfs",
       "images": [
-        {
+        {"index": 1,
           "src": "/dart pdfs/Bsoft_Introduction to programming with Java (1)-1.webp"
         },
-        {
+        {"index": 2,
           "src": "/dart pdfs/Bsoft_Introduction to programming with Java (1)-2.webp"
         },
-        {
+        {"index": 3,
           "src": "/dart pdfs/Bsoft_Introduction to programming with Java (1)-3.webp"
         },
-        {
+        {"index": 4,
           "src": "/dart pdfs/Bsoft_Introduction to programming with Java (1)-4.webp"
         },
-        {
+        {"index": 5,
           "src": "/dart pdfs/Bsoft_Introduction to programming with Java (1)-5.webp"
         },
-        {
+        {"index": 6,
           "src": "/dart pdfs/Bsoft_Introduction to programming with Java (1)-6.webp"
         },
-        {
+        {"index": 7,
           "src": "/dart pdfs/Bsoft_Introduction to programming with Java (1)-7.webp"
         },
-        {
+        {"index": 8,
           "src": "/dart pdfs/Bsoft_Introduction to programming with Java (1)-8.webp"
         },
-        {
+        {"index": 9,
           "src": "/dart pdfs/Bsoft_Introduction to programming with Java (1)-9.webp"
         },
-        {
+        {"index": 10,
           "src": "/dart pdfs/Bsoft_Introduction to programming with Java (1)-10.webp"
         },
-        {
+        {"index": 11,
           "src": "/dart pdfs/Bsoft_Introduction to programming with Java (1)-11.webp"
         },
-        {
+        {"index": 12,
           "src": "/dart pdfs/Bsoft_Introduction to programming with Java (1)-12.webp"
         }
       ]
@@ -85,40 +97,40 @@
     {
       "name": "html css js pdfs",
       "images": [
-        {
+        {"index": 1,
           "src": "/dart pdfs/Bsoft_Introduction_to_web_programming_HTML,_CSS,_JavaScript_1-1.webp"
         },
-        {
+        {"index": 2,
           "src": "/dart pdfs/Bsoft_Introduction_to_web_programming_HTML,_CSS,_JavaScript_1-2.webp"
         },
-        {
+        {"index": 3,
           "src": "/dart pdfs/Bsoft_Introduction_to_web_programming_HTML,_CSS,_JavaScript_1-3.webp"
         },
-        {
+        {"index": 4,
           "src": "/dart pdfs/Bsoft_Introduction_to_web_programming_HTML,_CSS,_JavaScript_1-4.webp"
         },
-        {
+        {"index": 5,
           "src": "/dart pdfs/Bsoft_Introduction_to_web_programming_HTML,_CSS,_JavaScript_1-5.webp"
         },
-        {
+        {"index": 6,
           "src": "/dart pdfs/Bsoft_Introduction_to_web_programming_HTML,_CSS,_JavaScript_1-6.webp"
         },
-        {
+        {"index": 7,
           "src": "/dart pdfs/Bsoft_Introduction_to_web_programming_HTML,_CSS,_JavaScript_1-7.webp"
         },
-        {
+        {"index": 8,
           "src": "/dart pdfs/Bsoft_Introduction_to_web_programming_HTML,_CSS,_JavaScript_1-8.webp"
         },
-        {
+        {"index": 9,
           "src": "/dart pdfs/Bsoft_Introduction_to_web_programming_HTML,_CSS,_JavaScript_1-9.webp"
         },
-        {
+        {"index": 10,
           "src": "/dart pdfs/Bsoft_Introduction_to_web_programming_HTML,_CSS,_JavaScript_1-10.webp"
         },
-        {
+        {"index": 11,
           "src": "/dart pdfs/Bsoft_Introduction_to_web_programming_HTML,_CSS,_JavaScript_1-11.webp"
         },
-        {
+        {"index": 12,
           "src": "/dart pdfs/Bsoft_Introduction_to_web_programming_HTML,_CSS,_JavaScript_1-12.webp"
         }
       ]

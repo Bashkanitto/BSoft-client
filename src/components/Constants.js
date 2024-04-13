@@ -129,20 +129,24 @@ export const reviewsList = [
 
 export const coursesList = [
 	{
-		name: 'introduction to web programming HTML, CSS, JavaScript',
+		name: 'introduction to web programming\n HTML, CSS, JavaScript',
 		img: 'images/javascript-color.svg',
-		pdfSrc: 'public/assets/pdfs/Bsoft_Introduction_to_web_programming_HTML,_CSS,_JavaScript_1.pdf',
-		description: 'Курс " Introduction to programming with JavaScript" обучает основам языка программирования. По окончании студенты смогут писать код на JavaScript и будут готовы к изучению React и Node.js.'
+		description: 'Курс " Introduction to programming with JavaScript" обучает основам языка программирования. По окончании студенты смогут писать код на JavaScript и будут готовы к изучению React и Node.js.',
+		additional: 'Стоимость: 100 тыс/месяц\nДлительность: 26 недель (6 месяцев) / 98 часов\nФормат: Гибридный, онлайн уроки на Discord, офлайн практические занятия',
 	},
 	{
 		name: 'Introduction to programming with Dart',
 		img: 'images/dart- color.svg',
-		description: 'Курс “Introduction to programming with Dart” для новичков. Вы освоите синтаксис Dart и базовые концепции ООП, готовясь к дальнейшему изучению Flutter."'
+		description: 'Курс “Introduction to programming with Dart” для новичков. Вы освоите синтаксис Dart и базовые концепции ООП, готовясь к дальнейшему изучению Flutter."',
+		additional: 'Стоимость: 100 тыс/месяц\nДлительность: 26 недель (6 месяцев) / 98 часов\nФормат: Гибридный, онлайн уроки на Discord, офлайн практические занятия',
+		button: 'second'
 	},
 	{
 		name: 'Introduction to programming with Java',
 		img: 'images/java-color.svg',
-		description: 'Курс "Introduction to programming with Java" обучает базовым принципам Java и созданию простых программ, подготавливая к дальнейшему изучению и разработке сложных приложений.'
+		description: 'Курс "Introduction to programming with Java" обучает базовым принципам Java и созданию простых программ, подготавливая к дальнейшему изучению и разработке сложных приложений.',
+		additional: 'Стоимость: 100 тыс/месяц\nДлительность: 26 недель (6 месяцев) / 98 часов\nФормат: Гибридный, онлайн уроки на Discord, офлайн практические занятия',
+		button: 'third'
 	},
 ];
 

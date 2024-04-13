@@ -4,15 +4,11 @@ const InfoUs = () => {
   const infoRef = useRef(null);
 
   return (
-    <section
-      id="info"
-      ref={infoRef}
-      className="shadow-md rounded-lg p-6"
-      style={{}}
-    >
+    <section id="info" ref={infoRef} className="shadow-md rounded-lg p-6">
+      <hr />
       <div className="text-center mx-auto px-4">
         <section className="my-4">
-          <h2 className="text-3xl font-bold mb-4">О нас</h2>
+          <h1 className="text-4xl font-bold mb-4">О нас</h1>
           <p className="text-lg mb-4 w-full">
             BSoft IT School – филиал Smavy School, открытый в 2021 году,
             специализируется на комплексных и передовых курсах по информационным
@@ -27,6 +23,7 @@ const InfoUs = () => {
           </p>
         </section>
       </div>
+      <hr />
     </section>
   );
 };

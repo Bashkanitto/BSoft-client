@@ -2,20 +2,16 @@ import { coursesList, stackList } from "./Constants";
 import { SectionName } from "./SectionName";
 import Modal from "./Modal";
 import { useState } from "react";
-
+import images from "./images.json";
 const Courses = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedCourseImages, setSelectedCourseImages] = useState([]);
-
-  const openModal = (images) => {
-    setSelectedCourseImages(images);
+  const openModal = () => {
     setIsModalOpen(true);
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
   };
-
   return (
     <section
       id="courses"
@@ -47,31 +43,37 @@ const Courses = () => {
       </div>
       {/* images here */}
 
-      <div className="courses-items justify-center lg:justify-between flex flex-wrap gap-10">
-        {coursesList.map((item) => (
-          <div key={item.name} className="relative flex flex-col items-center">
-            <img
-              className="w-[250px] h-[250px] rounded-2xl mb-4"
-              src={item.img}
-              alt="stackItem"
-            />
-            <div className="flex gap-2">
+      <div className=" p-4 rounded-lg">
+        <div className="courses-items justify-center lg:justify-between flex flex-wrap gap-10">
+          {coursesList.map((item) => (
+            <div
+              key={item.name}
+              className="relative flex flex-col items-center border p-4 rounded-lg text-lg "
+            >
+              <img
+                className="w-[250px] h-[250px] rounded-2xl mb-4"
+                src={item.img}
+                alt="stackItem"
+              />
+              <div className="flex gap-2">
+                <span className="text-lg  transition duration-500">
+                  {item.name}
+                </span>
+              </div>
+              <span className="w-[350px] h-[300px] p-3 m-3">
+                {item.description} {item.additional}
+              </span>
               <button
-                className="border rounded-lg p-1 text-sm hover:bg-white hover:text-black transition duration-500"
-                onClick={() => openModal(item.images)}
+                className="bg-purple-600 text-white px-4 py-2 rounded-full transition duration-300 hover:text-purple-800 hover:bg-white"
+                onClick={openModal}
               >
-                {item.name}
+                Силлабус
               </button>
+              {isModalOpen && <Modal images={images} closeModal={closeModal} />}
             </div>
-            <p className="w-[300px] h-[150px] p-3 m-3 border rounded-lg">
-              {item.description}
-            </p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-      {isModalOpen && (
-        <Modal images={selectedCourseImages} closeModal={closeModal} />
-      )}
     </section>
   );
 };
