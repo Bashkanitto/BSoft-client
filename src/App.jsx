@@ -10,7 +10,7 @@ import Team from "./components/Team";
 import Questions from "./components/Questions";
 import Contact from "./components/Contact";
 import InfoUs from "./components/InfoUs";
-
+import ProcessWork from "./components/ProcessWork";
 function App() {
   return (
     <div className="flex flex-col gap-10">
@@ -19,6 +19,7 @@ function App() {
       <Stack />
       <Courses />
       <InfoUs />
+      <ProcessWork/>
       <Team />
       <Goals />
       <Price />
