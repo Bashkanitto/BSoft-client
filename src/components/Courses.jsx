@@ -4,12 +4,12 @@ import { SectionName } from "./SectionName";
 import Modal from "./Modal";
 import * as imagesData from "./images.json";
 const dart =
-  imagesData.folders.find((folder) => folder.name === "dart pdfs")?.images ||
+  imagesData.folders.find((folder) => folder.name === "dart")?.images ||
   [];
 const html =
   imagesData.folders.find((folder) => folder.name === "html")?.images || [];
 const java =
-  imagesData.folders.find((folder) => folder.name === "java pdfs")?.images ||
+  imagesData.folders.find((folder) => folder.name === "java")?.images ||
   [];
 
 const Courses = () => {
@@ -21,9 +21,9 @@ const Courses = () => {
   console.log(java);
   const openModal = (button) => {
     if (button === "first") {
-      setImages(dart);
-    } else if (button === "second") {
       setImages(html);
+    } else if (button === "second") {
+      setImages(dart);
     } else if (button === "third") {
       setImages(java);
     }
@@ -82,11 +82,11 @@ const Courses = () => {
                   {item.name}
                 </span>
               </div>
-              <div className="flex flex-col gap-[200px]">
+              <div className="flex flex-col gap-[50px] item-center">
                 <span className="w-[320px] h-[170px] p-3 m-3 text-center">
-                  {item.description}{" "}
+                  {item.description}
                 </span>
-                <span className="w-[310px] p-1 text-center ">
+                <span className="w-[320px] p-1 text-center">
                   {item.additional}
                 </span>
               </div>
