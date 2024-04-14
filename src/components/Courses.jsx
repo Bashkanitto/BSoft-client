@@ -4,13 +4,11 @@ import { SectionName } from "./SectionName";
 import Modal from "./Modal";
 import * as imagesData from "./images.json";
 const dart =
-  imagesData.folders.find((folder) => folder.name === "dart")?.images ||
-  [];
+  imagesData.folders.find((folder) => folder.name === "dart")?.images || [];
 const html =
   imagesData.folders.find((folder) => folder.name === "html")?.images || [];
 const java =
-  imagesData.folders.find((folder) => folder.name === "java")?.images ||
-  [];
+  imagesData.folders.find((folder) => folder.name === "java")?.images || [];
 
 const Courses = () => {
   const [images, setImages] = useState([]);
@@ -82,11 +80,11 @@ const Courses = () => {
                   {item.name}
                 </span>
               </div>
-              <div className="flex flex-col gap-[50px] item-center">
-                <span className="w-[320px] h-[170px] p-3 m-3 text-center">
+              <div className="flex flex-col gap-[5px] item-center">
+                <span className="w-[320px] h-[170px]  m-3  text-center">
                   {item.description}
                 </span>
-                <span className="w-[320px] p-1 text-center">
+                <span className="w-[320px] text-lg p-1 text-center">
                   {item.additional}
                 </span>
               </div>
