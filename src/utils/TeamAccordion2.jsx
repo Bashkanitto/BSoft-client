@@ -4,10 +4,9 @@ export const TeamAccordion2 = ({ list }) => {
   return (
     <div>
       {list.map((item, index) => (
-        <>
+        <div key={index}>
           <hr />
           <div
-            key={index}
             style={{
               height: "190px",
               flexDirection: item.reverse == true ? "row-reverse" : "row",
@@ -43,7 +42,7 @@ export const TeamAccordion2 = ({ list }) => {
               />
             )}
           </div>
-        </>
+        </div>
       ))}
       <hr />
     </div>
