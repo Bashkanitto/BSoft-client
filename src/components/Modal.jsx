@@ -1,5 +1,3 @@
-import PropTypes from "prop-types";
-import modalImages from "./images.json";
 const Modal = ({ images, closeModal }) => {
   return (
     <div id="modal" style={{ width: "50%" }}>
@@ -8,10 +6,10 @@ const Modal = ({ images, closeModal }) => {
           &times;
         </span>
         <div className="image-column">
-          {modalImages.map((image, index) => (
+          {images.map((image, index) => (
             <img
-              key={index}
-              src={images.src}
+              key={image.index}
+              src={image.src}
               alt={`Image ${index}`}
               className="mb-2"
             />
@@ -26,15 +24,6 @@ const Modal = ({ images, closeModal }) => {
       </div>
     </div>
   );
-};
-
-Modal.propTypes = {
-  images: PropTypes.arrayOf(
-    PropTypes.shape({
-      src: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-  closeModal: PropTypes.func.isRequired,
 };
 
 export default Modal;

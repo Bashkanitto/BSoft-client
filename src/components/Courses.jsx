@@ -1,17 +1,39 @@
+import { useState } from "react";
 import { coursesList, stackList } from "./Constants";
 import { SectionName } from "./SectionName";
 import Modal from "./Modal";
-import { useState } from "react";
-import images from "./images.json";
+import * as imagesData from "./images.json";
+const dart =
+  imagesData.folders.find((folder) => folder.name === "dart pdfs")?.images ||
+  [];
+const html =
+  imagesData.folders.find((folder) => folder.name === "html")?.images || [];
+const java =
+  imagesData.folders.find((folder) => folder.name === "java pdfs")?.images ||
+  [];
+
 const Courses = () => {
+  const [images, setImages] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const openModal = () => {
+
+  console.log(html);
+  console.log(dart);
+  console.log(java);
+  const openModal = (button) => {
+    if (button === "first") {
+      setImages(dart);
+    } else if (button === "second") {
+      setImages(html);
+    } else if (button === "third") {
+      setImages(java);
+    }
     setIsModalOpen(true);
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
   return (
     <section
       id="courses"
@@ -30,10 +52,10 @@ const Courses = () => {
         </div>
         <div className="stackBtns flex flex-wrap gap-3 w-full md:w-5/6 h-[70px] mb-10">
           {/* stack btns here  */}
-          {stackList.map((item) => (
+          {stackList.map((item, index) => (
             <button
+              key={index}
               className="border rounded-lg flex p-2 items-center gap-2 h-[30px]"
-              key={item}
             >
               <img className="w-[20px]" src={item.img} alt={item.name} />
               {item.name}
@@ -45,9 +67,9 @@ const Courses = () => {
 
       <div className="p-4 rounded-lg">
         <div className="courses-items justify-center lg:justify-between flex flex-row flex-wrap gap-10">
-          {coursesList.map((item) => (
+          {coursesList.map((item, index) => (
             <div
-              key={item.name}
+              key={index}
               className="relative flex flex-col items-center border p-4 rounded-lg text-lg"
             >
               <img
@@ -60,17 +82,23 @@ const Courses = () => {
                   {item.name}
                 </span>
               </div>
-              <span className="w-[320px] h-[170px] p-3 m-3 text-center">{item.description} </span>
-              <span className="w-[310px] p-1 text-center ">{item.additional}</span>
+              <div className="flex flex-col gap-[200px]">
+                <span className="w-[320px] h-[170px] p-3 m-3 text-center">
+                  {item.description}{" "}
+                </span>
+                <span className="w-[310px] p-1 text-center ">
+                  {item.additional}
+                </span>
+              </div>
               <button
                 className="bg-purple-600 text-white px-4 py-2 rounded-full transition duration-300 hover:text-purple-800 hover:bg-white"
-                onClick={openModal}
+                onClick={() => openModal(item.button)}
               >
                 Силлабус
               </button>
-              {isModalOpen && <Modal images={images} closeModal={closeModal} />}
             </div>
           ))}
+          {isModalOpen && <Modal images={images} closeModal={closeModal} />}
         </div>
       </div>
     </section>
