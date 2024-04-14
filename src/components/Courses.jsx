@@ -84,9 +84,19 @@ const Courses = () => {
                 <span className="w-[320px] h-[170px]  m-3  text-center">
                   {item.description}
                 </span>
-                <span className="w-[320px] text-lg p-1 text-center">
-                  {item.additional}
-                </span>
+                <div className="w-[320px] text-lg p-1 text-center">
+                  <ul>
+                    <li>◉Стоимость: 100 тыс/месяц</li>
+                    <li>
+                      ◉Длительность: 26 недель (6 месяцев) / 98 академических
+                      часов.
+                    </li>
+                    <li>
+                      ◉Формат: Гибридный, онлайн уроки на Discord, оффлайн
+                      практические занятия
+                    </li>
+                  </ul>
+                </div>
               </div>
               <button
                 className="bg-purple-600 text-white px-4 py-2 rounded-full transition duration-300 hover:text-purple-800 hover:bg-white"
