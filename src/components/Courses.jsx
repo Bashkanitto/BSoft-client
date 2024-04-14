@@ -68,7 +68,7 @@ const Courses = () => {
           {coursesList.map((item, index) => (
             <div
               key={index}
-              className="relative flex flex-col items-center border p-4 rounded-lg text-lg"
+              className="relative flex flex-col items-center border p-4 rounded-lg text-lg w-full sm:w-[30%] md:w-[30%] lg:w-[30%]"
             >
               <img
                 className="w-[250px] h-[250px] rounded-2xl mb-4"
