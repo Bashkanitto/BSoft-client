@@ -22,7 +22,8 @@ const YourComponent = () => {
           </p>
           <img
             src={image1}
-            className="opacity-70 w-20 md:w-20 mt-3 md:mt-0 absolute bottom-[1px]"
+            className="opacity-50 w-20 md:w-10 mt-3 md:mt-0 absolute bottom-[1px]"
+            style={{width:'50px'}}
             alt="Описание изображения 1"
           />
         </div>
