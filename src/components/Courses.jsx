@@ -1,22 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { coursesList, stackList } from "./Constants";
 import { SectionName } from "./SectionName";
 import Modal from "./Modal";
 import * as imagesData from "./images.json";
-const dart =
-  imagesData.folders.find((folder) => folder.name === "dart")?.images || [];
-const html =
-  imagesData.folders.find((folder) => folder.name === "html")?.images || [];
-const java =
-  imagesData.folders.find((folder) => folder.name === "java")?.images || [];
-
 const Courses = () => {
   const [images, setImages] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const dart =
+    imagesData.folders.find((folder) => folder.name === "dart")?.images || [];
+  const html =
+    imagesData.folders.find((folder) => folder.name === "html")?.images || [];
+  const java =
+    imagesData.folders.find((folder) => folder.name === "java")?.images || [];
 
-  console.log(html);
-  console.log(dart);
-  console.log(java);
+  useEffect(() => {
+    // Предварительная загрузка изображений
+    const preloadImages = () => {
+      const allImages = [...dart, ...html, ...java];
+      allImages.forEach((imageSrc) => {
+        const img = new Image();
+        img.src = imageSrc;
+      });
+    };
+    preloadImages();
+  }, []);
+
   const openModal = (button) => {
     if (button === "first") {
       setImages(html);
@@ -74,6 +82,7 @@ const Courses = () => {
                 className="w-[250px] h-[250px] rounded-2xl mb-4"
                 src={item.img}
                 alt="stackItem"
+                loading="lazy"
               />
               <div className="flex gap-2">
                 <span className="text-bold transition duration-500">
